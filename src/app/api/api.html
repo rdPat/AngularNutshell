@@ -1,0 +1,22 @@
+<div class="main">
+  <p class="heading">Product Catalogue</p>
+
+
+  <div class="product-container" *ngIf="productList.length > 0; else loading">
+    <div class="myproduct" *ngFor="let product of productList; trackBy: trackById">
+      <ul class="eachproduct">
+        <li class="product-image">
+          <img [src]="product.thumbnail" alt="{{ product.title }}" width="150">
+        </li>
+        <li class="product-title">{{ product.title }}</li>
+        <li class="product-price" *ngIf="product.price !== undefined">
+          {{ product.price | currency }}
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <ng-template #loading>
+    <p>Loading products…</p>
+  </ng-template>
+</div>

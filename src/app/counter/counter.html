@@ -1,0 +1,13 @@
+<div class="main">
+  <h1 style="margin-left:80px;">Counter App</h1>
+
+  <h2 class="count">{{count}}</h2>
+  <div>
+      <button (click)="handleCount('incr')" class="btn bg-red">Increment</button>
+      <button (click)="handleCount('decr')" class="btn bg-black">Decrement</button>
+      <button (click)="handleCount('rst')" class="btn bg-yellow">Reset</button>
+  </div>
+
+  <br>
+  <a routerLink="/api">Go to API Page</a>
+</div>

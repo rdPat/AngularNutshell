@@ -1,0 +1,31 @@
+.main
+{
+    font-family: cursive;
+    margin-left: 30px;
+    
+}
+.heading
+{
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.product-container {
+  display: flex;          /* align children in a row */
+  flex-wrap: wrap;        /* wrap to next line if overflow */
+  gap: 20px;              /* spacing between products */
+  justify-content: flex-start; /* align left, or use center for center */
+}
+
+.eachproduct
+{
+    list-style: none;
+}
+
+.myproduct
+{
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 5px;
+}
